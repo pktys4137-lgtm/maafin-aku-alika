@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12141c">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Sebuah permintaan maaf yang tulus.">
+  <meta property="og:title" content="Untuk kamu">
+  <meta property="og:description" content="Ada yang ingin aku sampaikan.">
+  <title>Untuk kamu</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312141c'/%3E%3Cpath d='M16 24s-7-4.4-7-9.6A4.1 4.1 0 0 1 16 12a4.1 4.1 0 0 1 7 2.4C23 19.6 16 24 16 24z' fill='none' stroke='%23eba3b6' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <main>
+    <header class="hero" aria-labelledby="page-title">
+      <p class="hero-lead">Untuk kamu yang lagi marah sama aku.</p>
+      <h1 id="page-title">
+        <span class="line">Aku mau</span>
+        <span class="line">minta maaf.</span>
+      </h1>
+      <a class="hero-cue" href="#surat">
+        Baca dulu sampai habis
+        <svg width="14" height="18" viewBox="0 0 14 18" aria-hidden="true"><path d="M7 1v15m0 0L1.5 10.5M7 16l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </header>
+
+    <article id="surat" class="letter" aria-label="Surat permintaan maaf">
+      <p>Maafin aku ya. Aku benar-benar minta maaf atas apa yang terjadi.</p>
+      <p>Aku jujur benar-benar nggak tahu kapan akun itu ke-follow, dan aku sama sekali nggak punya maksud apa-apa di balik itu.</p>
+      <p>Tapi aku sadar, walaupun aku nggak sengaja, tetap aja itu bisa bikin kamu kecewa, kesel, atau kepikiran.</p>
+      <p>Aku nggak mau membela diri atau menganggap masalah ini sepele. Aku ngerti kalau kamu merasa nggak nyaman.</p>
+      <p>Aku cuma mau kamu tahu kalau aku sayang sama kamu dan aku nggak mau hal seperti ini bikin kamu merasa nggak dihargai.</p>
+      <p>Aku memang nggak selalu sempurna dalam menjaga perasaan kamu, tapi aku benar-benar mau belajar dan memperbaiki kesalahan aku.</p>
+      <p class="sign">Maafin aku ya, beyy.</p>
+    </article>
+
+    <aside class="note" aria-label="Catatan kecil">
+      <p>Aku nggak minta kamu langsung berhenti marah.</p>
+      <p>Kalau kamu masih butuh waktu, aku ngerti.</p>
+      <p>Aku cuma ingin kamu tahu kalau permintaan maaf ini benar-benar tulus.</p>
+    </aside>
+
+    <section id="response-section" class="ask" aria-labelledby="ask-title">
+      <h2 id="ask-title">Apakah kamu mau memaafkan aku?</h2>
+      <p class="ask-hint">Nggak ada jawaban yang salah. Pilih yang benar-benar kamu rasakan.</p>
+
+      <div id="response-actions" class="choices">
+        <button class="choice" data-answer="forgiven" type="button">
+          <span class="choice-label">Aku maafin kamu</span>
+          <span class="choice-sub">Kita baikan.</span>
+        </button>
+        <button class="choice" data-answer="not_forgiven" type="button">
+          <span class="choice-label">Aku belum bisa maafin</span>
+          <span class="choice-sub">Aku butuh waktu.</span>
+        </button>
+      </div>
+
+      <p id="response-status" class="status" role="status" aria-live="polite"></p>
+
+      <div id="response-result" class="result" hidden tabindex="-1">
+        <h3 id="result-title"></h3>
+        <p id="result-text"></p>
+      </div>
+    </section>
+
+    <footer class="foot">Dibuat dengan tulus, untuk kamu.</footer>
+  </main>
+
+  <div id="celebration" class="celebration" aria-hidden="true"></div>
+  <script src="/js/script.js" defer></script>
+</body>
+</html>
